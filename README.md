@@ -17,7 +17,7 @@ We implement following microservices for a potential nutrition application
 
 ## Eureka Server
 
-Service Discovery is one of the key tenets of a microservice-based architecture. Trying to hand-configure each client or some form of convention can be difficult to do and can be brittle. Eureka is the Netflix Service Discovery Server and Client. The server can be configured and deployed to be highly available, with each server replicating state about the registered services to the others. Eureka Server is also known as Discovery Server.
+Service Discovery is one of the key tenets of a microservice-based architecture. Trying to hand-configure each client or some form of convention can be difficult to do and can be brittle. Eureka is the Netflix Service Discovery Server and Client. The server can be configured and deployed to be highly available, with each server replicating state about the registered services to the others. Eureka Server is also known as Discovery Server.[1]
 
 ## Eureka Client
 Every Micro service will register into the Eureka server and Eureka server knows all the client applications running on each port and IP address
@@ -28,12 +28,13 @@ Every Micro service will register into the Eureka server and Eureka server knows
 
 ## Spring Cloud NetflixFeign Client
 
-An alternative to the Spring Ribbon-enabled RestTemplate class is Netflix’s Feign client library. The Feign library takes a different approach to call a REST service by having the developer first define a Java interface and then annotating that interface with Spring Cloud annotations to map what Eureka-based service Ribbon will invoke.[1]
+An alternative to the Spring Ribbon-enabled RestTemplate class is Netflix’s Feign client library. The Feign library takes a different approach to call a REST service by having the developer first define a Java interface and then annotating that interface with Spring Cloud annotations to map what Eureka-based service Ribbon will invoke.[2]
 
 ## Spring Discovery client enabled RestTemplate
 
-This is one of the more common mechanisms for interacting with Ribbon via Spring. To use a Ribbon-aware RestTemplate class, we need to define a RestTemplate bean construction method with a Spring Cloud annotation called @LoadBalanced.[2]
+This is one of the more common mechanisms for interacting with Ribbon via Spring. To use a Ribbon-aware RestTemplate class, we need to define a RestTemplate bean construction method with a Spring Cloud annotation called @LoadBalanced.[3]
 
 ## References
-[1] John Carnell; Illary Huaylupo Sánchez. Spring Microservices in Action, Second Edition MEAP V05 (Kindle Locations 4038-4040). Manning Publications Co.. Kindle Edition.  
-[2] John Carnell; Illary Huaylupo Sánchez. Spring Microservices in Action, Second Edition MEAP V05 (Kindle Locations 3976-3978). Manning Publications Co.. Kindle Edition.   
+[1] https://cloud.spring.io/spring-cloud-netflix/multi/multi__service_discovery_eureka_clients.html
+[2] John Carnell; Illary Huaylupo Sánchez. Spring Microservices in Action, Second Edition MEAP V05 (Kindle Locations 4038-4040). Manning Publications Co.. Kindle Edition.  
+[3] John Carnell; Illary Huaylupo Sánchez. Spring Microservices in Action, Second Edition MEAP V05 (Kindle Locations 3976-3978). Manning Publications Co.. Kindle Edition.   
