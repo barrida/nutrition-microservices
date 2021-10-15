@@ -4,13 +4,11 @@
 
 We implement following microservices:  
 
-<ol>
-  <li><em>config server registry</em>(<em><strong> Config Server</strong></em>)</li>
-  <li><em>service registry</em>(<em><strong> Eureka Server</strong></em>)</li>
-  <li><em>service that produces food resources</em>(<em><strong> Food Service</strong></em>)</li>
-  <li>service consumes the <em>Food REST</em> service as a registry-aware client (<em><strong>Spring Cloud Netflix <strong>Feign Client</strong></em>)</li>
-  <li>service that consumes the <em>Food REST</em> service as a Ribbon-aware client (<em><strong>Spring Discovery client enabled RestTemplate</strong></em>)</li>
-</ol>
+- Config server registry 
+- Service registry 
+- Food service that produces food resources
+- Feign-client service that consumes the Food REST service as a registry-aware client Spring Cloud Netflix Feign Client
+- Rest-client service that consumes the Food REST service as a Ribbon-aware client Spring Discovery client enabled RestTemplate
 
 ## Tech Stack
 
