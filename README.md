@@ -35,6 +35,6 @@ An alternative to the Spring Ribbon-enabled RestTemplate class is Netflix’s Fe
 This is one of the more common mechanisms for interacting with Ribbon via Spring. To use a Ribbon-aware RestTemplate class, we need to define a RestTemplate bean construction method with a Spring Cloud annotation called @LoadBalanced.[3]
 
 ## References
-[1] https://cloud.spring.io/spring-cloud-netflix/multi/multi__service_discovery_eureka_clients.html
+[1] https://cloud.spring.io/spring-cloud-netflix/multi/multi__service_discovery_eureka_clients.html  
 [2] John Carnell; Illary Huaylupo Sánchez. Spring Microservices in Action, Second Edition MEAP V05 (Kindle Locations 4038-4040). Manning Publications Co.. Kindle Edition.  
 [3] John Carnell; Illary Huaylupo Sánchez. Spring Microservices in Action, Second Edition MEAP V05 (Kindle Locations 3976-3978). Manning Publications Co.. Kindle Edition.   
