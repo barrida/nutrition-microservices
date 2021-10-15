@@ -28,11 +28,11 @@ Every Micro service will register into the Eureka server and Eureka server knows
 
 ## Spring Cloud NetflixFeign Client
 
-An alternative to the Spring Ribbon-enabled RestTemplate class is Netflix’s Feign client library. The Feign library takes a different approach to call a REST service by having the developer first define a Java interface and then annotating that interface with Spring Cloud annotations to map what Eureka-based service Ribbon will invoke.[1](1)
+An alternative to the Spring Ribbon-enabled RestTemplate class is Netflix’s Feign client library. The Feign library takes a different approach to call a REST service by having the developer first define a Java interface and then annotating that interface with Spring Cloud annotations to map what Eureka-based service Ribbon will invoke.[1]
 
 ## Spring Discovery client enabled RestTemplate
 
-This is one of the more common mechanisms for interacting with Ribbon via Spring. To use a Ribbon-aware RestTemplate class, we need to define a RestTemplate bean construction method with a Spring Cloud annotation called @LoadBalanced.[2](2)
+This is one of the more common mechanisms for interacting with Ribbon via Spring. To use a Ribbon-aware RestTemplate class, we need to define a RestTemplate bean construction method with a Spring Cloud annotation called @LoadBalanced.[2]
 
 ## References
 [1] John Carnell; Illary Huaylupo Sánchez. Spring Microservices in Action, Second Edition MEAP V05 (Kindle Locations 4038-4040). Manning Publications Co.. Kindle Edition.  
