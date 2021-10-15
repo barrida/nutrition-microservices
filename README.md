@@ -8,8 +8,8 @@ We implement following microservices for a potential nutrition application
   <li><em>config server registry</em>(<em><strong> Config Server</strong></em>)</li>
   <li><em>service registry</em>(<em><strong> Eureka Server</strong></em>)</li>
   <li><em>service that produces food resources</em>(<em><strong> Food Service</strong></em>)</li>
-  <li>a web application that consumes the <em>Food REST</em> service as a registry-aware client (<em><strong>Spring Cloud Netflix <strong>Feign Client</strong></em>)</li>
-  <li>a web application that consumes the <em>Food REST</em> service as a Ribbon-aware client (<em><strong>Spring Discovery client enabled RestTemplate</strong></em>)</li>
+  <li>service consumes the <em>Food REST</em> service as a registry-aware client (<em><strong>Spring Cloud Netflix <strong>Feign Client</strong></em>)</li>
+  <li>service that consumes the <em>Food REST</em> service as a Ribbon-aware client (<em><strong>Spring Discovery client enabled RestTemplate</strong></em>)</li>
 </ol>
 
 ## Config Server
@@ -20,7 +20,7 @@ We implement following microservices for a potential nutrition application
 Service Discovery is one of the key tenets of a microservice-based architecture. Trying to hand-configure each client or some form of convention can be difficult to do and can be brittle. Eureka is the Netflix Service Discovery Server and Client. The server can be configured and deployed to be highly available, with each server replicating state about the registered services to the others. Eureka Server is also known as Discovery Server.[1]
 
 ## Eureka Client
-Every Micro service will register into the Eureka server and Eureka server knows all the client applications running on each port and IP address
+_Food Service_, _Spring Cloud Netflix Feign Client_ and _Spring Discovery client enabled RestTemplate_ are _Eureka Clients_. Every microservice will register into the Eureka server and Eureka server knows all the client applications running on each port and IP address.
 
 ## Config vs Eureka Server
 
